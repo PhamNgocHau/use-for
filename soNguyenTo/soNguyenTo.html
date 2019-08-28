@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let num = parseInt(prompt('Nhap vao tong so nguyen to dau tien can tim : ')) ;
+let count = 0;
+let checkNum = 2;
+while (count < num) {
+    if(isPrimeNumber(checkNum)){
+        document.write(' ' + checkNum);
+        count++;
+    }
+    checkNum++;
+}
+
+function isPrimeNumber(num) {
+    let squareRoot = Math.sqrt(num);
+    for(let i = 2; i <= squareRoot; i++){
+        if (num % i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+</script>
+</body>
+</html>

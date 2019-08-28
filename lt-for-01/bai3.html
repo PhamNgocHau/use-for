@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    let fibonacci1 = 0;
+    let fibonacci2 = 1;
+    let temp=0;
+    for (let i = 0 ; i < 20 ; i++){
+        document.write(' '+fibonacci1);
+        temp = fibonacci2;
+        fibonacci2 = fibonacci1 + fibonacci2;
+        fibonacci1 = temp;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    //let nhapNhietDo = parseInt(prompt('Nhap nhiet do: '));
+    // while (nhapNhietDo < 20 || nhapNhietDo > 100){
+    //    if(nhapNhietDo < 20 ){
+    //        alert('Can tang nhiet do');
+    //    }
+    //    if(nhapNhietDo > 100 ){
+    //        alert('Can giam nhiet do');
+    //    }
+    //    nhapNhietDo = parseInt(prompt('Nhap nhiet do: '));
+    // }
+    // alert('ket thuc');
+
+    let nhapNhietDo;
+    do {
+        nhapNhietDo = parseInt(prompt('Nhap nhiet do: '));
+        if(nhapNhietDo < 20){
+            alert('Can tang nhiet do');
+        }
+        if(nhapNhietDo > 100){
+            alert('Can tang nhiet do');
+        }
+    }while (nhapNhietDo < 20 || nhapNhietDo > 100);
+</script>
+</body>
+</html>
